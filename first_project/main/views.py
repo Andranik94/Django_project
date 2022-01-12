@@ -9,4 +9,5 @@ def home_page(request):
     return render(request, "home.html", {})
 
 
-
+def about_as(request):
+    return  HttpResponse("<h4>Abou as</h4>")
