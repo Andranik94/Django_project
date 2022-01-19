@@ -7,5 +7,8 @@ def home_page(request):
     return render(request, "home.html", {})
 
 
-def about_as(request):
-    return HttpResponse("<h4>Abou as</h4>")
+def about_us(request):
+    return render(request, "about_us.html", {})
+
+def contact_us(request):
+    return render(request, "contact_us.html", {})
