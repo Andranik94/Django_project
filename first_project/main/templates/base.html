@@ -18,13 +18,14 @@
 </style>
 <body>
 <header>
-    <ul>
-        <li><a href="/">Home page</a></li>
-        <li><a href="/about_us"> About us</a></li>
-        <li><a href="/contact_us">Contac us</a></li>
+    <ul class="nav_class">
+        <li><a href="{%url 'blog:home'%}">Home page</a></li>
+        <li><a href="{%url 'blog:about_us'%}"> About us</a></li>
+        <li><a href="{%url 'blog:contact_us'%}">Contac us</a></li>
     </ul>
 
 </header>
+<br>
 {%block content%}
 {%endblock%}
 </body>

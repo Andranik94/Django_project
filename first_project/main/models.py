@@ -6,5 +6,6 @@ from django.db import models
 class Blog(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
-    def __str__(self):
+    def ___str___(self):
+        #db_colum = "{}{}".format(self.title,self.description)
         return self.title
